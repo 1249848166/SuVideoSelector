@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="su.com.suvideoselector.SelectPanelActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="50dp"
+        android:overScrollMode="never"
+        android:fadingEdge="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:elevation="20dp"
+        android:background="#eeeeee"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="UnusedAttribute">
+
+        <TextView
+            android:id="@+id/directory"
+            android:text="请选择文件夹"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/num"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:text="视频选择"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <Button
+                android:id="@+id/selectedNum"
+                android:text="0/5"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/round_corner_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+</RelativeLayout>

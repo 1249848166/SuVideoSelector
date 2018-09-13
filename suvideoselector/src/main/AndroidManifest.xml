@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="su.com.suvideoselector">
+
+    <application>
+        <activity
+            android:name="su.com.suvideoselector.SelectPanelActivity"
+            android:theme="@style/MyWindowNoTitle" />
+    </application>
+
+</manifest>
