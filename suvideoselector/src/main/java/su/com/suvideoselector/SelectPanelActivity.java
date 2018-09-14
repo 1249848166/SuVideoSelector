@@ -249,7 +249,7 @@ public class SelectPanelActivity extends AppCompatActivity implements View.OnCli
 
     void openPopupWindow(View view,int offx,int offy){
         try {
-            popupWindow.showAtLocation(view, Gravity.BOTTOM, offx, offy);
+            popupWindow.showAtLocation(parent, Gravity.BOTTOM, offx, offy);
             backgroundAlpha(0.3f);
         }catch (Exception e){
             e.printStackTrace();
