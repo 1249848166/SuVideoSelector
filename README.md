@@ -12,7 +12,7 @@ allprojects {
 ```
 ```java
 dependencies {
-	        implementation 'com.github.1249848166:SuVideoSelector:1.0'
+	        implementation 'com.github.1249848166:SuVideoSelector:1.3'
 	}
 ```
 ## 3.使用
