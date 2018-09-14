@@ -2,17 +2,15 @@ package su.com.videoselectortest;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.SurfaceHolder;
 import android.view.View;
-import android.view.WindowManager;
 
 import java.util.List;
 
-import su.com.suvideoselector.SelectPanelActivity;
+import su.com.suvideoselector.SelectVideoPanelActivity;
 import su.com.suvideoselector.SuVideoPlayerView;
 import su.com.suvideoselector.VideoPlayerListener;
 
@@ -29,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         bar=findViewById(R.id.bar);
         setSupportActionBar(bar);
 
-        Intent intent=new Intent(this, SelectPanelActivity.class);
+        Intent intent=new Intent(this, SelectVideoPanelActivity.class);
         startActivityForResult(intent,CODE_REQUEST);
     }
 

@@ -4,7 +4,7 @@
     android:id="@+id/parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="su.com.suvideoselector.SelectPanelActivity">
+    tools:context="su.com.suvideoselector.SelectVideoPanelActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler"

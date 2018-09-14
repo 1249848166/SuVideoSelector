@@ -34,7 +34,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class SelectPanelActivity extends AppCompatActivity implements View.OnClickListener,FolderListener{
+public class SelectVideoPanelActivity extends AppCompatActivity implements View.OnClickListener,FolderListener{
 
     View parent;
     List<String> paths;
@@ -89,9 +89,8 @@ public class SelectPanelActivity extends AppCompatActivity implements View.OnCli
     protected void onCreate(Bundle savedInstanceState) {
         try {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_select_panel);
-
-            parent=findViewById(R.id.parent);
+            parent=LayoutInflater.from(this).inflate(R.layout.activity_select_video_panel,null);
+            setContentView(parent);
 
             initScreen();
             initViews();
@@ -298,7 +297,7 @@ public class SelectPanelActivity extends AppCompatActivity implements View.OnCli
                                 setResult(RESULT_OK, intent);
                                 finish();
                             }else{
-                                Toast.makeText(SelectPanelActivity.this, "请选择", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SelectVideoPanelActivity.this, "请选择", Toast.LENGTH_SHORT).show();
                             }
                         } catch (Exception e) {
                             e.printStackTrace();

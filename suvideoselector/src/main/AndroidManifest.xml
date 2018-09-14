@@ -4,7 +4,7 @@
 
     <application>
         <activity
-            android:name="su.com.suvideoselector.SelectPanelActivity"
+            android:name="su.com.suvideoselector.SelectVideoPanelActivity"
             android:theme="@style/MyWindowNoTitle" />
     </application>
 
